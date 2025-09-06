@@ -9,7 +9,7 @@ The app is designed to streamline the workflow of preparing data for analysis by
 
 ---
 
-## Features
+## ✨Features
 
 - **File Loading**
   - Import `.csv`, `.xlsx`, or NPSS `.rowOut` files.
