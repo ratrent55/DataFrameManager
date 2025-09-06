@@ -1,6 +1,6 @@
 # DataFrame Manager
 
-**DataFrame Manager** is a lightweight `tkinter` GUI tool I created that simplifies loading, organizing, processing, and reusing datasets. 
+**DataFrame Manager** is a lightweight `tkinter` GUI tool that simplifies loading, organizing, processing, and reusing datasets. 
 
 
 It supports reading **Excel (.xlsx, .csv)** files and **NPSS `.rowOut`** files, automatically converting them into `pandas` DataFrames.  
