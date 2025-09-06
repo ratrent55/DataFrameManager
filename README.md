@@ -1,6 +1,9 @@
 # DataFrame Manager
 
-**DataFrame Manager** is a lightweight `tkinter` GUI tool that simplifies loading, organizing, processing, and reusing datasets. It supports reading **Excel (.xlsx, .csv)** files and **NPSS `.rowOut`** files, automatically converting them into `pandas` DataFrames.  
+**DataFrame Manager** is a lightweight `tkinter` GUI tool I created that simplifies loading, organizing, processing, and reusing datasets. 
+
+
+It supports reading **Excel (.xlsx, .csv)** files and **NPSS `.rowOut`** files, automatically converting them into `pandas` DataFrames.  
 
 The app is designed to streamline the workflow of preparing data for analysis by combining file management, cleaning, and reusable storage into one interface.
 
@@ -53,12 +56,38 @@ The app is designed to streamline the workflow of preparing data for analysis by
    Use the built-in buttons to delete files, groups, or saved DataFrames.  
 
 ---
+**Data Frame Manager GUI**
 
+Organize data files into Pandas Dataframes
+<p align="left">
+  <img src="images/dataframemanager2.png" alt="Main Window" width="600">
+</p>
+
+---
+Preview data 👇 loaded from files and handle null values from drop down
+<p align="left">
+  <img src="images/preview.png" alt="Main Window" width="600">
+</p>
+
+---
+Easily load dataFrame into code by clicking "Copy to Clipboard" and paste into your code! 
+<p align="left">
+  <img src="images/load.png" alt="Main Window" width="600">
+</p>
+
+---
 ## Example: Loading a Saved DataFrame
+⚠️ Needs Pandas library
 
-When you save a DataFrame, the app provides a snippet like:
 
 ```python
 import pandas as pd
 
-df = pd.read_pickle("stored_dataframes/my_dataframe.pkl")
+
+# When you save a DataFrame, the app provides a snippet like:
+
+import pickle
+
+# Load the DataFrame
+with open(r"c:\Users\ratre\Documents\2_Python Scripts\DataFrameManager\saved_dataframes\testDF.pkl", 'rb') as f:
+    testDF_df = pickle.load(f)
